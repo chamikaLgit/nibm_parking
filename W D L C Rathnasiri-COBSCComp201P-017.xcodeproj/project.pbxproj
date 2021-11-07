@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB511DBE2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DBD2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */; };
+		FB511DC02737CA8F00581633 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DBF2737CA8F00581633 /* ContentView.swift */; };
+		FB511DC22737CA9300581633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB511DC12737CA9300581633 /* Assets.xcassets */; };
+		FB511DC52737CA9400581633 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB511DC42737CA9400581633 /* Preview Assets.xcassets */; };
+		FB511DD02737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DCF2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.swift */; };
+		FB511DDB2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DDA2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB511DCC2737CA9400581633 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB511DB22737CA8F00581633 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB511DB92737CA8F00581633;
+			remoteInfo = "W D L C Rathnasiri-COBSCComp201P-017";
+		};
+		FB511DD72737CA9400581633 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB511DB22737CA8F00581633 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB511DB92737CA8F00581633;
+			remoteInfo = "W D L C Rathnasiri-COBSCComp201P-017";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB511DBA2737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W D L C Rathnasiri-COBSCComp201P-017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB511DBD2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift; sourceTree = "<group>"; };
+		FB511DBF2737CA8F00581633 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB511DC12737CA9300581633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB511DC42737CA9400581633 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB511DC62737CA9400581633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB511DCB2737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "W D L C Rathnasiri-COBSCComp201P-017Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB511DCF2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.swift; sourceTree = "<group>"; };
+		FB511DD12737CA9400581633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB511DD62737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "W D L C Rathnasiri-COBSCComp201P-017UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB511DDA2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.swift; sourceTree = "<group>"; };
+		FB511DDC2737CA9500581633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB511DB72737CA8F00581633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB511DC82737CA9400581633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB511DD32737CA9400581633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB511DB12737CA8F00581633 = {
+			isa = PBXGroup;
+			children = (
+				FB511DBC2737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017 */,
+				FB511DCE2737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017Tests */,
+				FB511DD92737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017UITests */,
+				FB511DBB2737CA8F00581633 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB511DBB2737CA8F00581633 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB511DBA2737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017.app */,
+				FB511DCB2737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017Tests.xctest */,
+				FB511DD62737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB511DBC2737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017 */ = {
+			isa = PBXGroup;
+			children = (
+				FB511DBD2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */,
+				FB511DBF2737CA8F00581633 /* ContentView.swift */,
+				FB511DC12737CA9300581633 /* Assets.xcassets */,
+				FB511DC62737CA9400581633 /* Info.plist */,
+				FB511DC32737CA9400581633 /* Preview Content */,
+			);
+			path = "W D L C Rathnasiri-COBSCComp201P-017";
+			sourceTree = "<group>";
+		};
+		FB511DC32737CA9400581633 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB511DC42737CA9400581633 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB511DCE2737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FB511DCF2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.swift */,
+				FB511DD12737CA9400581633 /* Info.plist */,
+			);
+			path = "W D L C Rathnasiri-COBSCComp201P-017Tests";
+			sourceTree = "<group>";
+		};
+		FB511DD92737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB511DDA2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.swift */,
+				FB511DDC2737CA9500581633 /* Info.plist */,
+			);
+			path = "W D L C Rathnasiri-COBSCComp201P-017UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB511DB92737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB511DDF2737CA9500581633 /* Build configuration list for PBXNativeTarget "W D L C Rathnasiri-COBSCComp201P-017" */;
+			buildPhases = (
+				FB511DB62737CA8F00581633 /* Sources */,
+				FB511DB72737CA8F00581633 /* Frameworks */,
+				FB511DB82737CA8F00581633 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "W D L C Rathnasiri-COBSCComp201P-017";
+			productName = "W D L C Rathnasiri-COBSCComp201P-017";
+			productReference = FB511DBA2737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB511DCA2737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB511DE22737CA9500581633 /* Build configuration list for PBXNativeTarget "W D L C Rathnasiri-COBSCComp201P-017Tests" */;
+			buildPhases = (
+				FB511DC72737CA9400581633 /* Sources */,
+				FB511DC82737CA9400581633 /* Frameworks */,
+				FB511DC92737CA9400581633 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB511DCD2737CA9400581633 /* PBXTargetDependency */,
+			);
+			name = "W D L C Rathnasiri-COBSCComp201P-017Tests";
+			productName = "W D L C Rathnasiri-COBSCComp201P-017Tests";
+			productReference = FB511DCB2737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB511DD52737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB511DE52737CA9500581633 /* Build configuration list for PBXNativeTarget "W D L C Rathnasiri-COBSCComp201P-017UITests" */;
+			buildPhases = (
+				FB511DD22737CA9400581633 /* Sources */,
+				FB511DD32737CA9400581633 /* Frameworks */,
+				FB511DD42737CA9400581633 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB511DD82737CA9400581633 /* PBXTargetDependency */,
+			);
+			name = "W D L C Rathnasiri-COBSCComp201P-017UITests";
+			productName = "W D L C Rathnasiri-COBSCComp201P-017UITests";
+			productReference = FB511DD62737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB511DB22737CA8F00581633 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FB511DB92737CA8F00581633 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					FB511DCA2737CA9400581633 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FB511DB92737CA8F00581633;
+					};
+					FB511DD52737CA9400581633 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FB511DB92737CA8F00581633;
+					};
+				};
+			};
+			buildConfigurationList = FB511DB52737CA8F00581633 /* Build configuration list for PBXProject "W D L C Rathnasiri-COBSCComp201P-017" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB511DB12737CA8F00581633;
+			productRefGroup = FB511DBB2737CA8F00581633 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB511DB92737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017 */,
+				FB511DCA2737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017Tests */,
+				FB511DD52737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB511DB82737CA8F00581633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB511DC52737CA9400581633 /* Preview Assets.xcassets in Resources */,
+				FB511DC22737CA9300581633 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB511DC92737CA9400581633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB511DD42737CA9400581633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB511DB62737CA8F00581633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB511DC02737CA8F00581633 /* ContentView.swift in Sources */,
+				FB511DBE2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB511DC72737CA9400581633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB511DD02737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB511DD22737CA9400581633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB511DDB2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB511DCD2737CA9400581633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB511DB92737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017 */;
+			targetProxy = FB511DCC2737CA9400581633 /* PBXContainerItemProxy */;
+		};
+		FB511DD82737CA9400581633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB511DB92737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017 */;
+			targetProxy = FB511DD72737CA9400581633 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB511DDD2737CA9500581633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB511DDE2737CA9500581633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB511DE02737CA9500581633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"W D L C Rathnasiri-COBSCComp201P-017/Preview Content\"";
+				DEVELOPMENT_TEAM = H4C9PU3KWK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lakshanChamika.W-D-L-C-Rathnasiri-COBSCComp201P-017";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB511DE12737CA9500581633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"W D L C Rathnasiri-COBSCComp201P-017/Preview Content\"";
+				DEVELOPMENT_TEAM = H4C9PU3KWK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lakshanChamika.W-D-L-C-Rathnasiri-COBSCComp201P-017";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB511DE32737CA9500581633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4C9PU3KWK;
+				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lakshanChamika.W-D-L-C-Rathnasiri-COBSCComp201P-017Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/W D L C Rathnasiri-COBSCComp201P-017.app/W D L C Rathnasiri-COBSCComp201P-017";
+			};
+			name = Debug;
+		};
+		FB511DE42737CA9500581633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4C9PU3KWK;
+				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lakshanChamika.W-D-L-C-Rathnasiri-COBSCComp201P-017Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/W D L C Rathnasiri-COBSCComp201P-017.app/W D L C Rathnasiri-COBSCComp201P-017";
+			};
+			name = Release;
+		};
+		FB511DE62737CA9500581633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4C9PU3KWK;
+				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lakshanChamika.W-D-L-C-Rathnasiri-COBSCComp201P-017UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "W D L C Rathnasiri-COBSCComp201P-017";
+			};
+			name = Debug;
+		};
+		FB511DE72737CA9500581633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4C9PU3KWK;
+				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lakshanChamika.W-D-L-C-Rathnasiri-COBSCComp201P-017UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "W D L C Rathnasiri-COBSCComp201P-017";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB511DB52737CA8F00581633 /* Build configuration list for PBXProject "W D L C Rathnasiri-COBSCComp201P-017" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB511DDD2737CA9500581633 /* Debug */,
+				FB511DDE2737CA9500581633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB511DDF2737CA9500581633 /* Build configuration list for PBXNativeTarget "W D L C Rathnasiri-COBSCComp201P-017" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB511DE02737CA9500581633 /* Debug */,
+				FB511DE12737CA9500581633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB511DE22737CA9500581633 /* Build configuration list for PBXNativeTarget "W D L C Rathnasiri-COBSCComp201P-017Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB511DE32737CA9500581633 /* Debug */,
+				FB511DE42737CA9500581633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB511DE52737CA9500581633 /* Build configuration list for PBXNativeTarget "W D L C Rathnasiri-COBSCComp201P-017UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB511DE62737CA9500581633 /* Debug */,
+				FB511DE72737CA9500581633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB511DB22737CA8F00581633 /* Project object */;
+}
