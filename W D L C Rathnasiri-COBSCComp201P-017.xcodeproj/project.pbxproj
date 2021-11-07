@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45CB3768F6BF0CB3152DEE82 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF48294EF696B4AEDF506B7D /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017.framework */; };
+		58290F9DA07955DACFD24A2C /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B652D1057227BEDACC13B76 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.framework */; };
+		D7498071DFC3DF4F6274B624 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017_W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360F8055E5130A605620C27E /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017_W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.framework */; };
 		FB511DBE2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DBD2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */; };
 		FB511DC02737CA8F00581633 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DBF2737CA8F00581633 /* ContentView.swift */; };
 		FB511DC22737CA9300581633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB511DC12737CA9300581633 /* Assets.xcassets */; };
@@ -33,6 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14E973E74196906B3FAE3500 /* Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.debug.xcconfig"; path = "Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		360F8055E5130A605620C27E /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017_W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017_W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B652D1057227BEDACC13B76 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B6E5DBD6E08EB4220BB1EC /* Pods-W D L C Rathnasiri-COBSCComp201P-017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W D L C Rathnasiri-COBSCComp201P-017.release.xcconfig"; path = "Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017/Pods-W D L C Rathnasiri-COBSCComp201P-017.release.xcconfig"; sourceTree = "<group>"; };
+		80F6945C2BBFF638CADFB602 /* Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.debug.xcconfig"; path = "Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017Tests/Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C2CF332C8CDA409A9E11D5F /* Pods-W D L C Rathnasiri-COBSCComp201P-017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W D L C Rathnasiri-COBSCComp201P-017.debug.xcconfig"; path = "Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017/Pods-W D L C Rathnasiri-COBSCComp201P-017.debug.xcconfig"; sourceTree = "<group>"; };
+		B8B76C80A64D3FD78DA03721 /* Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.release.xcconfig"; path = "Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.release.xcconfig"; sourceTree = "<group>"; };
+		CF48294EF696B4AEDF506B7D /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02AD58568354D4A7E001F72 /* Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.release.xcconfig"; path = "Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017Tests/Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FB511DBA2737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W D L C Rathnasiri-COBSCComp201P-017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB511DBD2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift; sourceTree = "<group>"; };
 		FB511DBF2737CA8F00581633 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CB3768F6BF0CB3152DEE82 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58290F9DA07955DACFD24A2C /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +80,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7498071DFC3DF4F6274B624 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017_W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0861FC4272EE3448163C155C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C2CF332C8CDA409A9E11D5F /* Pods-W D L C Rathnasiri-COBSCComp201P-017.debug.xcconfig */,
+				80B6E5DBD6E08EB4220BB1EC /* Pods-W D L C Rathnasiri-COBSCComp201P-017.release.xcconfig */,
+				14E973E74196906B3FAE3500 /* Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.debug.xcconfig */,
+				B8B76C80A64D3FD78DA03721 /* Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.release.xcconfig */,
+				80F6945C2BBFF638CADFB602 /* Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.debug.xcconfig */,
+				D02AD58568354D4A7E001F72 /* Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4EC3E3A83940C2459FF5471E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF48294EF696B4AEDF506B7D /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017.framework */,
+				360F8055E5130A605620C27E /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017_W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.framework */,
+				7B652D1057227BEDACC13B76 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB511DB12737CA8F00581633 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +118,8 @@
 				FB511DCE2737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017Tests */,
 				FB511DD92737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017UITests */,
 				FB511DBB2737CA8F00581633 /* Products */,
+				0861FC4272EE3448163C155C /* Pods */,
+				4EC3E3A83940C2459FF5471E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB511DDF2737CA9500581633 /* Build configuration list for PBXNativeTarget "W D L C Rathnasiri-COBSCComp201P-017" */;
 			buildPhases = (
+				78192428A6F3E72E80D63627 /* [CP] Check Pods Manifest.lock */,
 				FB511DB62737CA8F00581633 /* Sources */,
 				FB511DB72737CA8F00581633 /* Frameworks */,
 				FB511DB82737CA8F00581633 /* Resources */,
+				BBFF5CF315AC48FA3548000F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB511DE22737CA9500581633 /* Build configuration list for PBXNativeTarget "W D L C Rathnasiri-COBSCComp201P-017Tests" */;
 			buildPhases = (
+				18E3648D5F89FE30783D7133 /* [CP] Check Pods Manifest.lock */,
 				FB511DC72737CA9400581633 /* Sources */,
 				FB511DC82737CA9400581633 /* Frameworks */,
 				FB511DC92737CA9400581633 /* Resources */,
@@ -172,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB511DE52737CA9500581633 /* Build configuration list for PBXNativeTarget "W D L C Rathnasiri-COBSCComp201P-017UITests" */;
 			buildPhases = (
+				5DF963A6C8A5785678D7A685 /* [CP] Check Pods Manifest.lock */,
 				FB511DD22737CA9400581633 /* Sources */,
 				FB511DD32737CA9400581633 /* Frameworks */,
 				FB511DD42737CA9400581633 /* Resources */,
+				A9E3248EDA7651A6FF5D1094 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18E3648D5F89FE30783D7133 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-W D L C Rathnasiri-COBSCComp201P-017Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DF963A6C8A5785678D7A685 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78192428A6F3E72E80D63627 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-W D L C Rathnasiri-COBSCComp201P-017-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E3248EDA7651A6FF5D1094 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBFF5CF315AC48FA3548000F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017/Pods-W D L C Rathnasiri-COBSCComp201P-017-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017/Pods-W D L C Rathnasiri-COBSCComp201P-017-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017/Pods-W D L C Rathnasiri-COBSCComp201P-017-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB511DB62737CA8F00581633 /* Sources */ = {
@@ -414,6 +563,7 @@
 		};
 		FB511DE02737CA9500581633 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C2CF332C8CDA409A9E11D5F /* Pods-W D L C Rathnasiri-COBSCComp201P-017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +586,7 @@
 		};
 		FB511DE12737CA9500581633 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B6E5DBD6E08EB4220BB1EC /* Pods-W D L C Rathnasiri-COBSCComp201P-017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +609,7 @@
 		};
 		FB511DE32737CA9500581633 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80F6945C2BBFF638CADFB602 /* Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +632,7 @@
 		};
 		FB511DE42737CA9500581633 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02AD58568354D4A7E001F72 /* Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +655,7 @@
 		};
 		FB511DE62737CA9500581633 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14E973E74196906B3FAE3500 /* Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +676,7 @@
 		};
 		FB511DE72737CA9500581633 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B76C80A64D3FD78DA03721 /* Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
