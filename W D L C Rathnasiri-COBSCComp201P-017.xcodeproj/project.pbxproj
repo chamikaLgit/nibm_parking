@@ -3,15 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		45CB3768F6BF0CB3152DEE82 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF48294EF696B4AEDF506B7D /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017.framework */; };
 		58290F9DA07955DACFD24A2C /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B652D1057227BEDACC13B76 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.framework */; };
 		D7498071DFC3DF4F6274B624 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017_W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360F8055E5130A605620C27E /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017_W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.framework */; };
-		FB511DBE2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DBD2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */; };
-		FB511DC02737CA8F00581633 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DBF2737CA8F00581633 /* ContentView.swift */; };
+		FB0724302738C5650020145D /* AuthManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07241B2738C5640020145D /* AuthManagerVM.swift */; };
+		FB0724312738C5650020145D /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07241D2738C5640020145D /* ResponseData.swift */; };
+		FB0724322738C5650020145D /* AuthManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07241F2738C5640020145D /* AuthManagerView.swift */; };
+		FB0724332738C5650020145D /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724202738C5640020145D /* SignInView.swift */; };
+		FB0724342738C5650020145D /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724212738C5640020145D /* ForgotPasswordView.swift */; };
+		FB0724352738C5650020145D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724222738C5640020145D /* SignUpView.swift */; };
+		FB0724362738C5650020145D /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724242738C5650020145D /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */; };
+		FB0724372738C5650020145D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0724262738C5650020145D /* Preview Assets.xcassets */; };
+		FB0724382738C5650020145D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724292738C5650020145D /* HomeView.swift */; };
+		FB0724392738C5650020145D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07242B2738C5650020145D /* LoadingView.swift */; };
+		FB07243B2738C5650020145D /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07242E2738C5650020145D /* Handlers.swift */; };
+		FB07243C2738C5650020145D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07242F2738C5650020145D /* BaseView.swift */; };
+		FB07243E2738C60C0020145D /* AuthManagerVM+ Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07243D2738C60C0020145D /* AuthManagerVM+ Service.swift */; };
+		FB0724402738C6850020145D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07243F2738C6850020145D /* User.swift */; };
+		FB0724442738D4E20020145D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB0724432738D4E20020145D /* GoogleService-Info.plist */; };
+		FB0724462738DA300020145D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724452738DA300020145D /* MainView.swift */; };
+		FB0724482738DA3D0020145D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724472738DA3D0020145D /* SettingsView.swift */; };
+		FB07244A2738DA4A0020145D /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724492738DA4A0020145D /* BookView.swift */; };
+		FB07244D2738EA8F0020145D /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07244C2738EA8F0020145D /* Slot.swift */; };
+		FB0724502738EBB40020145D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07244F2738EBB40020145D /* MainViewModel.swift */; };
 		FB511DC22737CA9300581633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB511DC12737CA9300581633 /* Assets.xcassets */; };
 		FB511DC52737CA9400581633 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB511DC42737CA9400581633 /* Preview Assets.xcassets */; };
 		FB511DD02737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DCF2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.swift */; };
@@ -45,9 +63,27 @@
 		B8B76C80A64D3FD78DA03721 /* Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.release.xcconfig"; path = "Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests/Pods-W D L C Rathnasiri-COBSCComp201P-017-W D L C Rathnasiri-COBSCComp201P-017UITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF48294EF696B4AEDF506B7D /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02AD58568354D4A7E001F72 /* Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.release.xcconfig"; path = "Target Support Files/Pods-W D L C Rathnasiri-COBSCComp201P-017Tests/Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FB07241B2738C5640020145D /* AuthManagerVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManagerVM.swift; sourceTree = "<group>"; };
+		FB07241D2738C5640020145D /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		FB07241F2738C5640020145D /* AuthManagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManagerView.swift; sourceTree = "<group>"; };
+		FB0724202738C5640020145D /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		FB0724212738C5640020145D /* ForgotPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		FB0724222738C5640020145D /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FB0724242738C5650020145D /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift; sourceTree = "<group>"; };
+		FB0724262738C5650020145D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB0724292738C5650020145D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FB07242B2738C5650020145D /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		FB07242E2738C5650020145D /* Handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handlers.swift; sourceTree = "<group>"; };
+		FB07242F2738C5650020145D /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		FB07243D2738C60C0020145D /* AuthManagerVM+ Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthManagerVM+ Service.swift"; sourceTree = "<group>"; };
+		FB07243F2738C6850020145D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FB0724432738D4E20020145D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB0724452738DA300020145D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FB0724472738DA3D0020145D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FB0724492738DA4A0020145D /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		FB07244C2738EA8F0020145D /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		FB07244F2738EBB40020145D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FB511DBA2737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W D L C Rathnasiri-COBSCComp201P-017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB511DBD2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift; sourceTree = "<group>"; };
-		FB511DBF2737CA8F00581633 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB511DC12737CA9300581633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB511DC42737CA9400581633 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB511DC62737CA9400581633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,7 +133,6 @@
 				80F6945C2BBFF638CADFB602 /* Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.debug.xcconfig */,
 				D02AD58568354D4A7E001F72 /* Pods-W D L C Rathnasiri-COBSCComp201P-017Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -109,6 +144,187 @@
 				7B652D1057227BEDACC13B76 /* Pods_W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB0724192738C5640020145D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FB07241A2738C5640020145D /* ViewModel */,
+				FB07241C2738C5640020145D /* Model */,
+				FB07241E2738C5640020145D /* View */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FB07241A2738C5640020145D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB07241B2738C5640020145D /* AuthManagerVM.swift */,
+				FB07243D2738C60C0020145D /* AuthManagerVM+ Service.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB07241C2738C5640020145D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB07241D2738C5640020145D /* ResponseData.swift */,
+				FB07243F2738C6850020145D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB07241E2738C5640020145D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB07241F2738C5640020145D /* AuthManagerView.swift */,
+				FB0724202738C5640020145D /* SignInView.swift */,
+				FB0724212738C5640020145D /* ForgotPasswordView.swift */,
+				FB0724222738C5640020145D /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB0724232738C5650020145D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724242738C5650020145D /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FB0724252738C5650020145D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724262738C5650020145D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB0724272738C5650020145D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724562738EC0C0020145D /* Tab */,
+				FB0724512738EBBD0020145D /* Home */,
+				FB0724522738EBD00020145D /* Book */,
+				FB0724532738EBDB0020145D /* Settings */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FB0724282738C5650020145D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724452738DA300020145D /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB07242A2738C5650020145D /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				FB07242B2738C5650020145D /* LoadingView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		FB07242D2738C5650020145D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FB07242E2738C5650020145D /* Handlers.swift */,
+				FB07242F2738C5650020145D /* BaseView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FB07244B2738EA5A0020145D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB07244C2738EA8F0020145D /* Slot.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB07244E2738EBA10020145D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB07244F2738EBB40020145D /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB0724512738EBBD0020145D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724282738C5650020145D /* View */,
+				FB07244B2738EA5A0020145D /* Model */,
+				FB07244E2738EBA10020145D /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FB0724522738EBD00020145D /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724542738EBED0020145D /* View */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		FB0724532738EBDB0020145D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724552738EBF70020145D /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FB0724542738EBED0020145D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724492738DA4A0020145D /* BookView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB0724552738EBF70020145D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724472738DA3D0020145D /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB0724562738EC0C0020145D /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724592738EC210020145D /* Model */,
+				FB0724582738EC1A0020145D /* ViewModel */,
+				FB0724572738EC140020145D /* View */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		FB0724572738EC140020145D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB0724292738C5650020145D /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB0724582738EC1A0020145D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB0724592738EC210020145D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FB511DB12737CA8F00581633 = {
@@ -136,8 +352,13 @@
 		FB511DBC2737CA8F00581633 /* W D L C Rathnasiri-COBSCComp201P-017 */ = {
 			isa = PBXGroup;
 			children = (
-				FB511DBD2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift */,
-				FB511DBF2737CA8F00581633 /* ContentView.swift */,
+				FB0724432738D4E20020145D /* GoogleService-Info.plist */,
+				FB0724232738C5650020145D /* App */,
+				FB0724192738C5640020145D /* Auth */,
+				FB07242A2738C5650020145D /* CustomView */,
+				FB0724272738C5650020145D /* Main */,
+				FB0724252738C5650020145D /* Preview Content */,
+				FB07242D2738C5650020145D /* Utilities */,
 				FB511DC12737CA9300581633 /* Assets.xcassets */,
 				FB511DC62737CA9400581633 /* Info.plist */,
 				FB511DC32737CA9400581633 /* Preview Content */,
@@ -279,6 +500,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0724372738C5650020145D /* Preview Assets.xcassets in Resources */,
+				FB0724442738D4E20020145D /* GoogleService-Info.plist in Resources */,
 				FB511DC52737CA9400581633 /* Preview Assets.xcassets in Resources */,
 				FB511DC22737CA9300581633 /* Assets.xcassets in Resources */,
 			);
@@ -408,8 +631,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB511DC02737CA8F00581633 /* ContentView.swift in Sources */,
-				FB511DBE2737CA8F00581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift in Sources */,
+				FB0724482738DA3D0020145D /* SettingsView.swift in Sources */,
+				FB0724402738C6850020145D /* User.swift in Sources */,
+				FB0724462738DA300020145D /* MainView.swift in Sources */,
+				FB0724332738C5650020145D /* SignInView.swift in Sources */,
+				FB07243C2738C5650020145D /* BaseView.swift in Sources */,
+				FB0724342738C5650020145D /* ForgotPasswordView.swift in Sources */,
+				FB07243E2738C60C0020145D /* AuthManagerVM+ Service.swift in Sources */,
+				FB07243B2738C5650020145D /* Handlers.swift in Sources */,
+				FB0724392738C5650020145D /* LoadingView.swift in Sources */,
+				FB0724382738C5650020145D /* HomeView.swift in Sources */,
+				FB0724302738C5650020145D /* AuthManagerVM.swift in Sources */,
+				FB07244D2738EA8F0020145D /* Slot.swift in Sources */,
+				FB0724352738C5650020145D /* SignUpView.swift in Sources */,
+				FB0724322738C5650020145D /* AuthManagerView.swift in Sources */,
+				FB0724312738C5650020145D /* ResponseData.swift in Sources */,
+				FB0724362738C5650020145D /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift in Sources */,
+				FB07244A2738DA4A0020145D /* BookView.swift in Sources */,
+				FB0724502738EBB40020145D /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +735,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -551,7 +790,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -572,7 +811,7 @@
 				DEVELOPMENT_TEAM = H4C9PU3KWK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -595,7 +834,7 @@
 				DEVELOPMENT_TEAM = H4C9PU3KWK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,7 +855,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4C9PU3KWK;
 				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -639,7 +878,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4C9PU3KWK;
 				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -661,6 +900,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4C9PU3KWK;
 				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -682,6 +922,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4C9PU3KWK;
 				INFOPLIST_FILE = "W D L C Rathnasiri-COBSCComp201P-017UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
