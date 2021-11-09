@@ -74,7 +74,8 @@ class AuthManagerVM: ObservableObject {
                 DispatchQueue.main.async {
                     //Success
                     if let _user = self?.user {
-                        self?.registerUser(user: _user, completion: { [weak self] status in
+                        let newUser = User(id: self?.auth.currentUser?.uid, nicNo: _user.nicNo, name: _user.name, email: _user.email, vehicleNo: _user.vehicleNo)
+                        self?.registerUser(user: newUser, completion: { [weak self] status in
                             if status {
                                 self?.signedIn = true
                                 completion(true)

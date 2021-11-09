@@ -8,18 +8,20 @@
 import Foundation
 
 struct User: Codable {
+    var id: String?
     var nicNo: String?
     var name: String?
     var email: String?
     var vehicleNo: String?
     
     enum CodingKeys: String, CodingKey {
-        case nicNo
+        case nicNo, id
         case name, email, vehicleNo
     }
     
     var dictionary: [String: Any] {
         return [
+                "id": id ?? "",
                 "nic": nicNo ?? "",
                 "name": name ?? "",
                 "email": email ?? "",

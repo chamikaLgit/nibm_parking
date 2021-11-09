@@ -37,7 +37,8 @@ struct SignUpView: View {
                         Button {
                             UIApplication.shared.endEditing()
                             if vm.validateForm(email: email, password: password) {
-                                vm.user = User(nicNo: nic, name: name, email: email, vehicleNo: vehicleNO)
+                                
+                                vm.user = User(id: vm.auth.currentUser?.uid, nicNo: nic, name: name, email: email, vehicleNo: vehicleNO)
                                 vm.signUp(email: email, password: password) { status in
                                     if !status {
                                         showAlert.toggle()

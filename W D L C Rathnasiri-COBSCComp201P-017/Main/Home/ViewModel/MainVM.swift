@@ -1,5 +1,5 @@
 //
-//  MainViewModel.swift
+//  MainVM.swift
 //  W D L C Rathnasiri-COBSCComp201P-017
 //
 //  Created by Sahan Ravindu on 2021-11-08.
@@ -8,8 +8,9 @@
 import Foundation
 import Firebase
 
-class MainViewModel: ObservableObject {
+class MainVM: ObservableObject {
     
+    let auth = Auth.auth()
     let semaphore = DispatchSemaphore(value: 1)
     @Published var slotList: [Slot] = []
     var ref = Database.database().reference()
@@ -17,13 +18,16 @@ class MainViewModel: ObservableObject {
     
     //Load student List
     func getSlotList(completion: @escaping CompletionApiHandler) {
+        
+        isLoading = true
+        
         DispatchQueue.main.async {
             if !self.slotList.isEmpty {
                 self.slotList.removeAll()
             }
         }
         self.ref.child("Parking/slots").observeSingleEvent(of: .value, with: { [weak self] (snapshot) in
-            
+            self?.isLoading = false
             if snapshot.childrenCount > 0 {
                 for student in snapshot.children.allObjects as! [DataSnapshot] {
                     //getting values
@@ -45,9 +49,9 @@ class MainViewModel: ObservableObject {
     }
     
     func getSlotListChanged() {
-        
+        isLoading = true
         self.ref.child("Parking/slots").observe(.childChanged, with: { [weak self] (snapshot) in
-        
+            self?.isLoading = false
             let slotObj = snapshot.value as! [String: Any]
             print(slotObj)
             let slot = Slot(id: slotObj["id"] as? String, type: slotObj["type"] as? String, user: slotObj["user"] as? User, time: slotObj["time"] as? String, resurved: slotObj["resurved"] as? Bool)

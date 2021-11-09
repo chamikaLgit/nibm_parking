@@ -19,10 +19,10 @@ struct HomeView: View {
                     Label("Home", systemImage: "list.dash")
                 }
             
-            BookView()
-                .tabItem {
-                    Label("Booking", systemImage: "list.dash")
-                }
+//            BookView()
+//                .tabItem {
+//                    Label("Booking", systemImage: "list.dash")
+//                }
             
             SettingsView()
                 .tabItem {
