@@ -27,7 +27,6 @@
 		FB0724442738D4E20020145D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB0724432738D4E20020145D /* GoogleService-Info.plist */; };
 		FB0724462738DA300020145D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724452738DA300020145D /* MainView.swift */; };
 		FB0724482738DA3D0020145D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724472738DA3D0020145D /* SettingsView.swift */; };
-		FB07244A2738DA4A0020145D /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0724492738DA4A0020145D /* BookView.swift */; };
 		FB07244D2738EA8F0020145D /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07244C2738EA8F0020145D /* Slot.swift */; };
 		FB0724502738EBB40020145D /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07244F2738EBB40020145D /* MainVM.swift */; };
 		FB07245C273931520020145D /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07245B273931520020145D /* BookingView.swift */; };
@@ -35,7 +34,6 @@
 		FB511DC52737CA9400581633 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB511DC42737CA9400581633 /* Preview Assets.xcassets */; };
 		FB511DD02737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DCF2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017Tests.swift */; };
 		FB511DDB2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB511DDA2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.swift */; };
-		FBB72290273A192B004FCA7F /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB7228F273A192B004FCA7F /* BookViewModel.swift */; };
 		FBB72294273A4F2E004FCA7F /* BookingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB72293273A4F2E004FCA7F /* BookingVM.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,7 +81,6 @@
 		FB0724432738D4E20020145D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB0724452738DA300020145D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FB0724472738DA3D0020145D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		FB0724492738DA4A0020145D /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		FB07244C2738EA8F0020145D /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
 		FB07244F2738EBB40020145D /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
 		FB07245B273931520020145D /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
@@ -97,7 +94,6 @@
 		FB511DD62737CA9400581633 /* W D L C Rathnasiri-COBSCComp201P-017UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "W D L C Rathnasiri-COBSCComp201P-017UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB511DDA2737CA9400581633 /* W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W_D_L_C_Rathnasiri_COBSCComp201P_017UITests.swift; sourceTree = "<group>"; };
 		FB511DDC2737CA9500581633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBB7228F273A192B004FCA7F /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		FBB72293273A4F2E004FCA7F /* BookingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,7 +209,6 @@
 				FB07245A2739313E0020145D /* Booking */,
 				FB0724562738EC0C0020145D /* Tab */,
 				FB0724512738EBBD0020145D /* Home */,
-				FB0724522738EBD00020145D /* Book */,
 				FB0724532738EBDB0020145D /* Settings */,
 			);
 			path = Main;
@@ -270,30 +265,12 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		FB0724522738EBD00020145D /* Book */ = {
-			isa = PBXGroup;
-			children = (
-				FBB72291273A1950004FCA7F /* Model */,
-				FBB7228E273A1914004FCA7F /* ViewModel */,
-				FB0724542738EBED0020145D /* View */,
-			);
-			path = Book;
-			sourceTree = "<group>";
-		};
 		FB0724532738EBDB0020145D /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				FB0724552738EBF70020145D /* View */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		FB0724542738EBED0020145D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FB0724492738DA4A0020145D /* BookView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		FB0724552738EBF70020145D /* View */ = {
@@ -432,21 +409,6 @@
 				FB511DDC2737CA9500581633 /* Info.plist */,
 			);
 			path = "W D L C Rathnasiri-COBSCComp201P-017UITests";
-			sourceTree = "<group>";
-		};
-		FBB7228E273A1914004FCA7F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				FBB7228F273A192B004FCA7F /* BookViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		FBB72291273A1950004FCA7F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -693,7 +655,6 @@
 				FB0724462738DA300020145D /* MainView.swift in Sources */,
 				FB0724332738C5650020145D /* SignInView.swift in Sources */,
 				FB07243C2738C5650020145D /* BaseView.swift in Sources */,
-				FBB72290273A192B004FCA7F /* BookViewModel.swift in Sources */,
 				FB0724342738C5650020145D /* ForgotPasswordView.swift in Sources */,
 				FB07243E2738C60C0020145D /* AuthManagerVM+ Service.swift in Sources */,
 				FB07243B2738C5650020145D /* Handlers.swift in Sources */,
@@ -706,7 +667,6 @@
 				FB0724322738C5650020145D /* AuthManagerView.swift in Sources */,
 				FB0724312738C5650020145D /* ResponseData.swift in Sources */,
 				FB0724362738C5650020145D /* W_D_L_C_Rathnasiri_COBSCComp201P_017App.swift in Sources */,
-				FB07244A2738DA4A0020145D /* BookView.swift in Sources */,
 				FB07245C273931520020145D /* BookingView.swift in Sources */,
 				FB0724502738EBB40020145D /* MainVM.swift in Sources */,
 			);

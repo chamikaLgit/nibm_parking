@@ -16,17 +16,20 @@ struct HomeView: View {
         TabView {
             MainView()
                 .tabItem {
-                    Label("Home", systemImage: "list.dash")
+                    Image(systemName: "house")
+                    Text("Home")
                 }
             
-//            BookView()
-//                .tabItem {
-//                    Label("Booking", systemImage: "list.dash")
-//                }
+            BookingView(slot: Slot())
+                .tabItem {
+                    Image(systemName: "book")
+                    Text("Booking")
+                }
             
             SettingsView()
                 .tabItem {
-                    Label("Setting", systemImage: "list.dash")
+                    Image(systemName: "gear")
+                    Text("Setting")
                 }
             
         }

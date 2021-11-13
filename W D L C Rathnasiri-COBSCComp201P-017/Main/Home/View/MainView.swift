@@ -11,6 +11,8 @@ struct MainView: View {
     
     //MARK: Variables
     @ObservedObject var vm = MainVM()
+    @State private var showAlert = false
+    @State var pressed: Int = -1
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -24,12 +26,15 @@ struct MainView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(vm.slotList) { items in
                         
-                        if isValidSlot(data: items) {
-                            CollectionView(data: items)
-                        } else {
+                        if items.id == vm.bookedSlot || !(items.resurved ?? false) && (vm.bookedSlot == "") {
                             NavigationLink(destination: BookingView(slot: items)) {
                                 CollectionView(data: items)
                             }
+                        } else {
+                            CollectionView(data: items).gesture(TapGesture().onEnded({ _ in
+                                vm.response = ResponseData(title: "Warning", message: "You have already booked a slot.", error: .error(""))
+                                showAlert.toggle()
+                            }))
                         }
                     }
                 }
@@ -39,24 +44,23 @@ struct MainView: View {
             }.navigationBarTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
-                vm.getSlotList { status in }
+                vm.bookedSlot = ""
+                vm.getSlotList {status in
+                    
+                }
                 vm.getSlotListChanged()
             }
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text(vm.response?.title ?? ""),
+                    message: Text(vm.response?.message ?? "")
+                )
+            }.padding()
             
         }
         
     }
     
-    func isValidSlot(data: Slot)-> Bool {
-        if let _id = vm.auth.currentUser?.uid, let slotUserId = data.user?.id {
-            if data.user == nil || slotUserId == _id {
-                return true
-            }
-            return false
-        } else {
-            return false
-        }
-    }
 }
 
 struct MainView_Previews: PreviewProvider {
@@ -74,34 +78,42 @@ struct CollectionView: View {
     @State private var isBookingView = false
     
     var body: some View {
-        
-//        NavigationLink(destination: isValidSlot() ? BookingView(slot: data) : nil) {
-            ZStack {
-                
-                if data.type == types.vip.rawValue {
-                    RoundedRectangle(cornerRadius: 8).frame(width: width, height: width, alignment: .center).foregroundColor(Color( data.resurved ?? false ? .red : .orange ))
-                } else {
-                    RoundedRectangle(cornerRadius: 8).frame(width: width, height: width, alignment: .center).foregroundColor(Color( data.resurved ?? false ? .red : .green ))
-                }
+        ZStack {
+            
+            if data.type == types.vip.rawValue {
+                RoundedRectangle(cornerRadius: 8).frame(width: width, height: width, alignment: .center).foregroundColor(Color( data.resurved ?? false ? .red : .orange ))
+            } else {
+                RoundedRectangle(cornerRadius: 8).frame(width: width, height: width, alignment: .center).foregroundColor(Color( data.resurved ?? false ? .red : .green ))
+            }
+            
+            VStack {
                 
                 VStack {
-                    
-                    VStack {
+                    Spacer()
+                    Text(self.data.type ?? "").foregroundColor(Color("f1"))
+                    if self.data.resurved ?? false {
                         Spacer()
-                        Text(self.data.type ?? "").foregroundColor(Color("f1"))
-                        Spacer()
-                        let status = self.data.resurved ?? false ? "Resrved" : "Free to book"
-                        Text(status).foregroundColor(Color("f1"))
-                        Spacer()
+                        Text(self.data.user?.vehicleNo ?? "").foregroundColor(Color("f1"))
                         
+                        if self.data.user?.id ?? "" == vm.auth.currentUser?.uid ?? "" {
+                            Spacer()
+                            HStack {
+                                Circle()
+                                    .fill(Color.blue)
+                                    .frame(width: 10, height: 10)
+                                Text("You slot").foregroundColor(Color("f1"))
+                            }
+                        }
                     }
+                    Spacer()
+                    let status = self.data.resurved ?? false ? "Resrved" : "Free to book"
+                    Text(status).foregroundColor(Color("f1"))
+                    Spacer()
+                    
                 }
-                
-                
             }
-//        }
+        }
     }
-    
     
 }
 
@@ -133,6 +145,7 @@ struct DetailView: View {
                     .frame(width: 10, height: 10)
                 Text("Reserved")
             }
+            
         }
     }
 }

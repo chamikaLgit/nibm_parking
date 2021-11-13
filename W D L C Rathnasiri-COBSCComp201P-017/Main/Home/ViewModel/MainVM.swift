@@ -12,9 +12,15 @@ class MainVM: ObservableObject {
     
     let auth = Auth.auth()
     let semaphore = DispatchSemaphore(value: 1)
-    @Published var slotList: [Slot] = []
+    @Published var slotList: [Slot] = [] {
+        didSet {
+            isBooked(data: slotList)
+        }
+    }
     var ref = Database.database().reference()
     @Published var isLoading = false
+    @Published var bookedSlot = ""
+    @Published var response: ResponseData?
     
     //Load student List
     func getSlotList(completion: @escaping CompletionApiHandler) {
@@ -32,8 +38,11 @@ class MainVM: ObservableObject {
                 for student in snapshot.children.allObjects as! [DataSnapshot] {
                     //getting values
                     let slotObj = student.value as? [String: AnyObject]
-                                        
-                    let slot = Slot(id: slotObj?["id"] as? String, type: slotObj?["type"] as? String, user: slotObj?["user"] as? User, time: slotObj?["time"] as? String, resurved: slotObj?["resurved"] as? Bool)
+                    let slotUser = slotObj?["user"] as? [String: Any]
+                    
+                    let _user = User(id: slotUser?["id"] as? String, nicNo: slotUser?["nicNo"] as? String, name: slotUser?["name"] as? String, email: slotUser?["email"] as? String, vehicleNo: slotUser?["vehicleNo"] as? String)
+                    
+                    let slot = Slot(id: slotObj?["id"] as? String, type: slotObj?["type"] as? String, user: _user, time: slotObj?["time"] as? String, resurved: slotObj?["resurved"] as? Bool)
                     
                     DispatchQueue.main.async {
                         self?.slotList.append(slot)
@@ -53,8 +62,11 @@ class MainVM: ObservableObject {
         self.ref.child("Parking/slots").observe(.childChanged, with: { [weak self] (snapshot) in
             self?.isLoading = false
             let slotObj = snapshot.value as! [String: Any]
-            print(slotObj)
-            let slot = Slot(id: slotObj["id"] as? String, type: slotObj["type"] as? String, user: slotObj["user"] as? User, time: slotObj["time"] as? String, resurved: slotObj["resurved"] as? Bool)
+            let slotUser = slotObj["user"] as? [String: Any]
+            
+            let _user = User(id: slotUser?["id"] as? String, nicNo: slotUser?["nicNo"] as? String, name: slotUser?["name"] as? String, email: slotUser?["email"] as? String, vehicleNo: slotUser?["vehicleNo"] as? String)
+            
+            let slot = Slot(id: slotObj["id"] as? String, type: slotObj["type"] as? String, user:  _user, time: slotObj["time"] as? String, resurved: slotObj["resurved"] as? Bool)
             self?.saveAndUpdateSlot(newSlot: slot)
             
         }) { (error) in
@@ -78,6 +90,55 @@ class MainVM: ObservableObject {
             }
         }
         
+    }
+    
+    func isValidSlot(data: Slot)-> Bool {
+        if let _id = auth.currentUser?.uid, let slotUserId = data.user?.id {
+            if data.user == nil || slotUserId == _id {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return false
+        }
+    }
+    
+    func isBooked(data: [Slot]) {
+        if let _id = auth.currentUser?.uid {
+            data.forEach { slot in
+                if slot.user?.id == _id {
+                    bookedSlot = slot.id ?? ""
+                    print("SELECTED SLOT \(bookedSlot)")
+                }
+            }
+        }
+    }
+    
+    func saveStudentData() {
+    
+        var slot: Slot?
+    
+        DispatchQueue.global(qos: .background).async {
+            for i in 0...24 {
+                self.semaphore.wait()
+                let dbReference = Database.database().reference().child("Parking/slots").childByAutoId()
+    
+    
+                if i != 1 || i != 2 || i != 3 || i != 4 {
+                    slot = Slot(id: "00\(i+1)", type: types.normal.rawValue, user: nil, time: "", resurved: false)
+                } else {
+                    slot = Slot(id: "00\(i+1)", type: types.vip.rawValue, user: nil, time: "", resurved: false)
+                }
+                dbReference.setValue(slot?.nsDictionary){error, ref in
+                    defer {
+                        self.semaphore.signal()
+                    }
+    
+                }
+            }
+        }
+    
     }
 
 }

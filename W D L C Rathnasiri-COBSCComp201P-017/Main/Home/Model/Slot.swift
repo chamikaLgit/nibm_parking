@@ -19,7 +19,7 @@ struct Slot: Identifiable {
         return [
                 "id": id ?? "",
                 "type": type ?? "",
-                "user": user ?? "",
+                "user": user?.nsDictionary ?? NSDictionary.self,
                 "time": time ?? "",
                 "resurved": resurved ?? false
                ]
