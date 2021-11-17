@@ -22,7 +22,7 @@ class MainVM: ObservableObject {
     @Published var bookedSlot = ""
     @Published var response: ResponseData?
     
-    //Load student List
+    //Load slot List
     func getSlotList(completion: @escaping CompletionApiHandler) {
         
         isLoading = true

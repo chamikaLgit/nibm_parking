@@ -15,7 +15,14 @@ class BookingVM: ObservableObject {
     @Published var user: User?
     @Published var isLoading = false
     @Published var response: ResponseData?
+    @Published var slotList: [Slot] = []
+    let mainVm = MainVM()
     
+    func geSlotList(completion: @escaping CompletionApiHandler) {
+        mainVm.getSlotList { status in
+            
+        }
+    }
     
     func getLoginProfile(completion: @escaping CompletionApiHandler) {
         let userID = Auth.auth().currentUser?.uid
@@ -39,9 +46,10 @@ class BookingVM: ObservableObject {
         ref.child("Parking/slots").queryOrdered(byChild: "id").queryEqual(toValue: slot.id).observeSingleEvent(of: .value) { [weak self] snapshot in
             
             self?.isLoading = false
-            let userObj = snapshot.value as! [String: Any]
-            print(userObj.keys)
-            let slotKeyArray = Array(userObj.keys)
+            let userObj = snapshot.value as? [String: Any]
+            print(userObj?.keys)
+            
+            let slotKeyArray = Array(userObj!.keys)
             let dateTime = self?.getDateString()
             
             let newSlot = Slot(id: slot.id ?? "", type: slot.type ?? "", user: booknow ? user : User(), time: dateTime, resurved: booknow)

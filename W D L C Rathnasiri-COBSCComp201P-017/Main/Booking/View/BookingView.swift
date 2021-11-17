@@ -7,20 +7,27 @@
 
 import SwiftUI
 import FirebaseAuth
+import UIKit
 
 struct BookingView: View {
     
     //MARK: Variables
     @ObservedObject var vm = BookingVM()
     @ObservedObject var vmMain = MainVM()
-    let slot: Slot
+    
+    @State var slot: Slot
+    @State var selectedSlot: Slot = Slot()
     @State var user: User = User()
     @State var name = ""
     @State var slotData = Slot()
+    
     @State private var showAlert = false
     @State private var selectedFrameworkIndex = 0
     @State private var isScrollExpanded = false
-    @ObservedObject var vmDrop = MyModel(slots: [])
+    
+    @State var showSlots = false
+    @State private var selectedSlotId = ""
+    @State var alredyReservedASlot = false
     
     var body: some View {
         ScrollView(.vertical) {
@@ -53,35 +60,17 @@ struct BookingView: View {
                                 .disabled( slot.id != nil ? true : false)
                         }
                     } else {
-                        ///////////// Drop down start
                         VStack {
-                            HStack(alignment: .firstTextBaseline) {
-                                Text("Slot No")
-                                Spacer()
-                            }.frame(alignment: .leading)
-                            //                            let vm = MyModel(slots: vmMain.slotList)
-                            //                            DropDownView(vm: vm)
-                            HStack{
-                                Text("Select : ")
-                                DisclosureGroup(vmDrop.selection, isExpanded: $isScrollExpanded) {
-                                    ScrollView {
-                                        VStack(alignment: .leading, spacing: 8) {
-                                            ForEach(vmDrop.newContents, id: \.self) { str in
-                                                Text("\(str)")
-                                                    .onTapGesture {
-                                                        vmDrop.selection = str
-                                                        withAnimation{
-                                                            isScrollExpanded.toggle()
-                                                        }
-                                                    }
-                                            }
-                                        }.padding()
-                                    }
+                            Button {
+                                withAnimation {
+                                    showSlots.toggle()
                                 }
+                                
+                            } label: {
+                                let text: String = getSelectText()
+                                Text(text).frame(width: 200, height: 50, alignment: .center).foregroundColor(.white).background(Color(slot.resurved ?? false ? .red : .blue)).cornerRadius(8)
                             }
                         }
-                        
-                        ///////////// Drop down end
                     }
                     
                     Button {
@@ -90,8 +79,17 @@ struct BookingView: View {
                         guard let _user = vm.user else {
                             return
                         }
-                        vm.updateSlotByUserBookingData(user: _user, slot: slot, booknow: slot.resurved ?? false ? false : true) { status in
+                        
+                        if selectedSlot.id == nil || selectedSlot.id == "" {
+                            selectedSlot = slot
+                        }
+                        
+                        vm.updateSlotByUserBookingData(user: _user, slot: selectedSlot, booknow: selectedSlot.resurved ?? false ? false : true) { status in
+                            selectedSlot = Slot()
                             vmMain.bookedSlot = ""
+                            
+                            clearAllData()
+                            loadProfile()
                         }
                         if vm.isLoading {
                             
@@ -112,25 +110,123 @@ struct BookingView: View {
                     }.padding()
                     
                 }.onAppear {
-                    vm.getLoginProfile { status in
-                        if let _user = vm.user {
-                            user = _user
-                            slotData = slot
-                        }
-                    }
-                    
-                    vmMain.getSlotList { status in
-                        
-                    }
+                    fetchData()
+                    UITableView.appearance().separatorStyle = .none
                 }.padding()
+                .onDisappear {
+                    clearAllData()
+                }
                 
                 if vm.isLoading {
                     LoadingView(message: "Loading...")
                 }
+                
+                if showSlots {
+                    if alredyReservedASlot {
+                        
+                    } else {
+                        VStack {
+                            
+                            List {
+                                
+                                ForEach(vm.slotList) { _slot in
+                                    VStack {
+                                        Button {
+                                            if _slot.resurved ?? false {
+                                                
+                                            } else {
+                                                selectedSlot = Slot(id: _slot.id ?? "", type: _slot.type ?? "", user: _slot.user ?? User(), time: _slot.time ?? "", resurved: _slot.resurved ?? false)
+                                                //                                                slot = selectedSlot
+                                                withAnimation {
+                                                    showSlots.toggle()
+                                                }
+                                            }
+                                        } label: {
+                                            let text: String = "\(_slot.id ?? "") - \(_slot.type ?? "")"
+                                            Text(text).foregroundColor(.white)
+                                        }
+                                    }.listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                                    //                                }
+                                }
+                                
+                            }.listStyle(InsetListStyle())
+                            
+                            
+                        }.background(Color(.gray))
+                        .padding()
+                        .cornerRadius(8)
+                        
+                    }
+                }
+                
+            }
+        }
+        
+    }
+    
+    func getValidSlotList()-> [Slot] {
+        var slotList: [Slot] = []
+        vm.mainVm.slotList.forEach { slot in
+            if slot.resurved ?? false {
+                if slot.user?.id == vm.user?.id {
+                    DispatchQueue.main.async {
+                        alredyReservedASlot = true
+                        selectedSlot = slot
+                        self.slot = slot
+                        slotData = slot
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        alredyReservedASlot = false
+                    }
+                }
+            } else {
+                slotList.append(slot)
+            }
+        }
+        
+        return slotList
+    }
+    
+    func fetchData() {
+        loadProfile()
+        getSlotList()
+    }
+    
+    func getSlotList() {
+        vm.geSlotList { staus in
+            
+        }
+    }
+    
+    func loadProfile() {
+        vm.getLoginProfile { status in
+            if let _user = vm.user {
+                vm.slotList = getValidSlotList()
+                user = _user
+                slotData = slot
             }
         }
     }
     
+    func clearAllData() {
+        slot = Slot()
+        selectedSlot = Slot()
+        slotData = Slot()
+        vm.user = User()
+    }
+    
+    func getSelectText()-> String {
+        if !alredyReservedASlot {
+            if selectedSlot.id != nil || selectedSlot.id != "" {
+                return  "\(selectedSlot.id ?? "") - \(selectedSlot.type ?? "")"
+            } else {
+                return "Select a Slot"
+            }
+        } else {
+            return "Select a Slot"
+        }
+    }
     
 }
 
@@ -149,56 +245,38 @@ extension Binding {
 
 struct DropDownView: View {
     
-    @State private var isScrollExpanded = false
-    @ObservedObject var vm = MyModel(slots: [])
-    
     var body: some View {
-        HStack{
-            Text("Select : ")
-            DisclosureGroup(vm.selection, isExpanded: $isScrollExpanded) {
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 8) {
-                        ForEach(vm.newContents, id: \.self) { str in
-                            Text("\(str)")
-                                .onTapGesture {
-                                    vm.selection = str
-                                    withAnimation{
-                                        isScrollExpanded.toggle()
-                                    }
-                                }
-                        }
-                    }.padding()
-                }
+        VStack {
+            Text("You have already select a slot")
+            Button {
+                HomeView()
+            } label: {
+                Text("Ok")
             }
+            
         }
     }
 }
 
-class MyModel: ObservableObject {
-    @Published var selection = "Select a slot"
-    var newContents: [String] = ["Yellow", "Blue", "Green", "White"]
-    @State var slotList: [Slot] = []
-    let userID = Auth.auth().currentUser?.uid
-    
-    init(slots: [Slot]) {
-        slotList = slots
-        createSlotArr()
-    }
-    
-    func createSlotArr() {
-        if slotList.count > 0 {
-            slotList.forEach { slot in
-                if slot.user?.id != userID {
-                    if slot.user?.id == nil || slot.user?.id == "" {
-                        newContents.append(slot.id ?? "")
-                    }
-                } else {
-                    selection = "You have already booked a slot"
-                    newContents = []
-                    
-                }
-            }
-        }
-    }
-    
-}
+
+
+//HStack(alignment: .firstTextBaseline) {
+//    Text("Please choose a slot: ")
+//    Spacer()
+//}.frame(alignment: .leading)
+////                            TextField("Selected Slot", text: $selectedSlotId).padding().background(Color(.secondarySystemBackground)).cornerRadius(8).disableAutocorrection(true).autocapitalization(.none)
+////                                .disabled( slot.id != nil ? true : false)
+//
+////                            Form {
+////                            Text("Select a slot >")
+//    Section {
+//        Picker(selection: $selectedSlotId, label: Text("Please choose a slot")) {
+//
+//            ForEach(vm.mainVm.slotList) { slot in
+//                Text(slot.id ?? "")
+//            }
+//        }
+//    }
+////                            }
+////                            Text("You selected: \(selectedSlotId)")
+//}

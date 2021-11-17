@@ -32,7 +32,7 @@ struct MainView: View {
                             }
                         } else {
                             CollectionView(data: items).gesture(TapGesture().onEnded({ _ in
-                                vm.response = ResponseData(title: "Warning", message: "You have already booked a slot.", error: .error(""))
+                                vm.response = ResponseData(title: "Warning", message: "You have already booked a slot or this slot was alredy booked", error: .error(""))
                                 showAlert.toggle()
                             }))
                         }
@@ -83,7 +83,7 @@ struct CollectionView: View {
             if data.type == types.vip.rawValue {
                 RoundedRectangle(cornerRadius: 8).frame(width: width, height: width, alignment: .center).foregroundColor(Color( data.resurved ?? false ? .red : .orange ))
             } else {
-                RoundedRectangle(cornerRadius: 8).frame(width: width, height: width, alignment: .center).foregroundColor(Color( data.resurved ?? false ? .red : .green ))
+                RoundedRectangle(cornerRadius: 8).frame(width: width, height: width, alignment: .center).foregroundColor(Color( (data.resurved ?? false ? .red : UIColor(named: "green1")) ?? .green ))
             }
             
             VStack {

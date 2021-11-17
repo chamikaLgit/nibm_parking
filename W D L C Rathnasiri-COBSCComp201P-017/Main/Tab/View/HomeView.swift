@@ -20,11 +20,11 @@ struct HomeView: View {
                     Text("Home")
                 }
             
-            BookingView(slot: Slot())
-                .tabItem {
-                    Image(systemName: "book")
-                    Text("Booking")
-                }
+//            BookingView(slot: Slot())
+//                .tabItem {
+//                    Image(systemName: "book")
+//                    Text("Booking")
+//                }
             
             SettingsView()
                 .tabItem {
